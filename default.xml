@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="xilinx"  fetch="https://github.com/Xilinx"/>
+  <remote name="xilinx-fork"  fetch="https://github.com/us-irs"/>
 
   <default sync-j="4"/>
 
@@ -8,7 +9,7 @@
        <copyfile dest="setupsdk" src="setupsdk"/>
   </project>
   <project remote="xilinx"    revision="rel-v2023.2"      name="yocto-manifests"          path="sources/manifest"/>
-  <project remote="xilinx"    revision="rel-v2023.2"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
+  <project remote="xilinx-fork"    revision="rel-v2023.2-hotfix"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-xilinx-tools"        path="sources/meta-xilinx-tools"/>
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-petalinux"           path="sources/meta-petalinux"/>
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-xilinx-tsn"          path="sources/meta-xilinx-tsn"/>
